@@ -1,0 +1,66 @@
+<!--Estilo de botones extraido de: https://uiverse.io/alexmaracinaru/brown-bobcat-65-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="Imagenes/logoAlura.png">
+    </header>
+
+    <div class="container">
+        <div>
+            <div class="entradaTexto">
+                <textarea id="input-text" class="input textArea"
+                    placeholder="Ingrese el texto a encriptar/desencriptar aquí" cols="75" rows="22"></textarea>
+
+                <button onclick="encriptar()" style="margin-top: 16px; margin-right: 3px;" class="botones">
+                    <span>Encriptar</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+
+                <button class="botones" onclick="desencriptar()">
+                    <span>Desencriptar</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+            </div>
+
+            <div class="campoBotones">
+
+                </button>
+            </div>
+        </div>
+
+        <div class="salidaTexto">
+            <textarea id="ouput-text" name="text" class="input textArea" readonly
+                placeholder="No hay palabras que mostrar" cols="33" rows="22"></textarea>
+            <button class="botones" style="margin-top: 16px;" onclick="copy()">
+                <span>Copiar</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
