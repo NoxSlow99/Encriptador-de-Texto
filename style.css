@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    margin: 2% 3%;
 }
 
 .logo {
@@ -16,7 +16,7 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    width: 940px;
 }
 
 .entradaTexto {
@@ -24,9 +24,16 @@ header {
     text-align: center;
 }
 
+#advertencia {
+    font-size: 11px;
+    color: black;
+    text-align: start;
+    margin-left: 22%;
+    margin-top: 11px;
+}
+
 .textArea {
     resize: none;
-
 }
 
 .salidaTexto {
@@ -108,4 +115,12 @@ header {
 
 .botones:active {
     transform: scale(0.95);
+}
+
+#copyright{
+    margin: 20px 0 0 0;
+    padding: 15px;
+    font-size: 13px;
+    text-align: center;
+    color: black;
 }

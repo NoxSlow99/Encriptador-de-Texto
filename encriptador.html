@@ -17,47 +17,48 @@
         <img class="logo" src="Imagenes/logoAlura.png">
     </header>
 
-    <div class="container">
-        <div>
-            <div class="entradaTexto">
-                <textarea id="input-text" class="input textArea"
-                    placeholder="Ingrese el texto a encriptar/desencriptar aquí" cols="75" rows="22"></textarea>
+    <main>
+        <div class="container">
+            <div>
+                <div class="entradaTexto">
+                    <textarea id="input-text" class="input textArea"
+                        placeholder="Ingrese el texto a encriptar/desencriptar aquí" cols="75" rows="22"></textarea>
 
-                <button onclick="encriptar()" style="margin-top: 16px; margin-right: 3px;" class="botones">
-                    <span>Encriptar</span>
+                    <p id="advertencia">&#9432 Solo minúsculas y sin acentos</p>
+                    <button onclick="encriptar()" style="margin-top: 16px; margin-right: 3px;" class="botones">
+                        <span>Encriptar</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+
+                    <button class="botones" onclick="desencriptar()">
+                        <span>Desencriptar</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                </div>
+            </div>
+
+            <div class="salidaTexto">
+                <textarea id="ouput-text" name="text" class="input textArea" readonly
+                    placeholder="No hay palabras que mostrar" cols="33" rows="22"></textarea>
+                <button class="botones" style="margin-top: 12%;" onclick="copy()">
+                    <span>Copiar</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                 </button>
-
-                <button class="botones" onclick="desencriptar()">
-                    <span>Desencriptar</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-            </div>
-
-            <div class="campoBotones">
-
-                </button>
             </div>
         </div>
+    </main>
 
-        <div class="salidaTexto">
-            <textarea id="ouput-text" name="text" class="input textArea" readonly
-                placeholder="No hay palabras que mostrar" cols="33" rows="22"></textarea>
-            <button class="botones" style="margin-top: 16px;" onclick="copy()">
-                <span>Copiar</span>
-                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </button>
-        </div>
-
-    </div>
+    <footer>
+        <p id="copyright">&copy Derechos reservados 2022 - Creador: Angel Colli</p>
+    </footer>
 
     <script src="main.js"></script>
 
