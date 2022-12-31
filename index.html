@@ -42,10 +42,13 @@
                 </div>
             </div>
 
-            <div class="salidaTexto">
-                <textarea id="ouput-text" name="text" class="input textArea" readonly
-                    placeholder="No hay palabras que mostrar" cols="33" rows="22"></textarea>
-                <button class="botones" style="margin-top: 12%;" onclick="copy()">
+            <div class="salidaTexto" >
+                <div id="ocultar" class="imagen">
+                    <img id="munieco" src="Imagenes/munieco.png">
+                    <p id="mensaje">Ningun mensaje fue encontrado.</p>
+                </div>
+                <textarea id="ouput-text" name="text" class="input textArea" readonly cols="33" rows="22"></textarea>
+                <button id="copy" class="botones" style="" onclick="copy()">
                     <span>Copiar</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>

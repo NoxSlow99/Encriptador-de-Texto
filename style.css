@@ -9,7 +9,7 @@ header {
 .logo {
     display: inline;
     position: relative;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .container {
@@ -41,6 +41,33 @@ header {
     text-align: center;
 }
 
+.imagen {
+    position: absolute;
+    width: 300px;
+    height: 455px;
+}
+
+#munieco {
+    height: 180px;
+    position: relative;
+    top: 50px;
+}
+
+#mensaje {
+    position: relative;
+    top: 70px;
+    left: 9px;
+    font-size: 22px;
+    color: #234567;
+    font-weight: bold;
+}
+
+#copy{
+    margin-top: 12%;
+    /*Haciendo invisible el boton copy*/
+    visibility: hidden;
+}
+
 .input {
     border: none;
     border-radius: 15px;
@@ -58,7 +85,6 @@ header {
     outline-color: white;
     place-content: "Enter your message!";
 }
-
 
 .botones {
     position: relative;
@@ -117,7 +143,7 @@ header {
     transform: scale(0.95);
 }
 
-#copyright{
+#copyright {
     margin: 20px 0 0 0;
     padding: 15px;
     font-size: 13px;
